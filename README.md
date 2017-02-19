@@ -1,2 +1,11 @@
-# ux-projects
-This repository contained new generation ui projects
+## To build
+
+run 'gulp'
+
+## to preview
+
+run 'gulp serve'
+
+## to clean dist
+
+run 'gulp clean:dist'
