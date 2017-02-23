@@ -1,21 +1,21 @@
 'use strict';
 
-/**
- * @ngdoc function
- * @name pinara.controller:MainController
- * @description
- * # MainController
- * Controller of the pinara
- */
 
+function MainContentController() {
+  var self = this;
 
+  self.message = " Hello from main controller";
 
-function MainController() {
-
-  this.awesomeThings = ['HTML5 Boilerplate', 'AngularJS', 'Karma'];
-
-
+  console.log("pınara side menu");
 }
 
-
-angular.module('pinara').controller('mainCtrl', MainController);
+angular.module('pinara').directive('pinaraMainContent', function() {
+    return {
+        restrict: 'E',
+        replace: true,
+        // link: function(scope, elem, attr) {},
+        controller: MainContentController,
+        controllerAs: 'mainContentCtrl',
+        templateUrl: 'views/main.html'
+    };
+});

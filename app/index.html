@@ -26,16 +26,19 @@
 
   <pinara-header></pinara-header>
 
-  <pinara-top-menu></pinara-top-menu>
+  <div class="container-fluid">
+    <div class="row">
 
-  <pinara-side-menu></pinara-side-menu>
+      <pinara-side-menu></pinara-side-menu>
 
-  <div class="container">
-    <div ng-view=""></div>
+      <!-- <div ui-view></div> -->
+
+      <pinara-main-content></pinara-main-content>
+
+    </div>
   </div>
 
   <pinara-footer></pinara-footer>
-
 
 
 
