@@ -13,6 +13,6 @@ angular.module('pinara').directive('pinaraTopMenu', function() {
         // link: function(scope, elem, attr) {},
         controller: TopMenuController,
         controllerAs: 'topMenuCtrl',
-        templateUrl: 'views/topmenu.html'
+        templateUrl: 'views/postlogin/topmenu.html'
     };
 });

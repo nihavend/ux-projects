@@ -12,6 +12,6 @@ angular.module('pinara').directive('pinaraFooter', function() {
         // link: function(scope, elem, attr) {},
         controller: PinaraFooterController,
         controllerAs: 'pinaraFooterCtrl',
-        templateUrl: 'views/footer.html'
+        templateUrl: 'views/postlogin/footer.html'
     };
 });

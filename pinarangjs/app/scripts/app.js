@@ -49,18 +49,23 @@ function applicationConfig($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/');
 
   $stateProvider
+    .state('prelogin', {
+      title: 'Login Öncesi',
+      url: '/',
+      views: {
+        layout: {
+          templateUrl: 'views/prelogin/prelogin.html',
+        },
+      },
+    })
     .state('home', {
       url: "/home",
-      templateUrl: "views/main.html",
+      views: {
+        layout: {
+          templateUrl: "views/postlogin/postlogin.html",
+        },
+      },
     })
-    .state('about', {
-      url: "/about",
-      templateUrl: "views/about.html",
-    })
-    .state('contact', {
-      url: "/contact",
-      templateUrl: "views/contact.html",
-    });
 
 
   // Gives page layouts to the index.html

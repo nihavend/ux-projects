@@ -12,6 +12,6 @@ angular.module('pinara').directive('pinaraHeader', function() {
         // link: function(scope, elem, attr) {},
         controller: PinaraHeaderController,
         controllerAs: 'pinaraHeaderCtrl',
-        templateUrl: 'views/header.html'
+        templateUrl: 'views/postlogin/header.html'
     };
 });

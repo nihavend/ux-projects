@@ -16,6 +16,6 @@ angular.module('pinara').directive('pinaraMainContent', function() {
         // link: function(scope, elem, attr) {},
         controller: MainContentController,
         controllerAs: 'mainContentCtrl',
-        templateUrl: 'views/main.html'
+        templateUrl: 'views/postlogin/main.html'
     };
 });
