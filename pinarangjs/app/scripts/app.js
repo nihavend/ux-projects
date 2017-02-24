@@ -15,7 +15,8 @@ angular.module('pinara', [
   'ngRoute',
   'ngSanitize',
   'ngTouch',
-  'ui.router'
+  'ui.router',
+  'ui.tree'
 ]);
 
 // .config(function($routeProvider) {
@@ -40,12 +41,12 @@ angular.module('pinara', [
 //     });
 // });
 
-applicationConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
+
 
 function applicationConfig($stateProvider, $urlRouterProvider) {
 
 
-  // $urlRouterProvider.otherwise('/');
+  $urlRouterProvider.otherwise('/');
 
   $stateProvider
     .state('home', {
@@ -85,5 +86,7 @@ function applicationConfig($stateProvider, $urlRouterProvider) {
   //   });
 
 }
+
+applicationConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
 
 angular.module('pinara').config(applicationConfig);
